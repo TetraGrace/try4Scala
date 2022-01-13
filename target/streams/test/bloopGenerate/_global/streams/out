@@ -1,0 +1,4 @@
+[debug] [try4scala-test] Classpath dependencies List()
+[debug] [try4scala-test] Dependencies from configurations List(try4scala)
+[debug] Bloop wrote the configuration of project 'try4scala-test' to 'I:\try4Scala\.bloop\try4scala-test.json'
+[success] Generated .bloop\try4scala-test.json

@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "1.0",
+    "configurations": [
+        {
+            "type": "scala",
+            "request": "launch",
+            "name": "getNameAge",
+            "testClass": "getNameAge"
+        },
+        {
+            "type": "scala",
+            "request": "launch",
+            "name": "outputJSON",
+            "testClass": "outputJSON"
+        },
+        {
+            "type": "scala",
+            "request": "launch",
+            "name": "Hello_World",
+            "mainClass": "Hello_World",
+            "args": [],
+            "jvmOptions": [],
+            "env": {}
+        }
+    ]
+}
