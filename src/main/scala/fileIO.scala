@@ -3,7 +3,7 @@ import java.io.PrintWriter
 import scala.io.Source
 import scala.io.StdIn.readLine
 import scala.collection.mutable.ArrayBuffer
-
+//Made by: Johnathan Cardoza, Grace Alberts, Jacob Monks,Brandon Conover, Diane Clarke, Jacob Nottingham, Yuechi Peng 
 object fileIO {
 
     def stringBuilder(buf: Array[Char]):String = {
@@ -14,9 +14,9 @@ object fileIO {
 
     def main(args: Array[String]):Unit = {
         val TESTPATH = "I:/try4Scala/src/main/TextDocs/testTex1.txt";
-        val passFile = "I:/try4Scala/src/main/TextDocs/userAndPass.txt"
+        val USERBASE = "I:/try4Scala/src/main/TextDocs/userAndPass.txt"
         val OTHERFILE = "I:/try4Scala/src/main/TextDocs/testTex2.txt"
-        var info = Source.fromFile(passFile).mkString.split(",").toBuffer
+        var info = Source.fromFile(USERBASE).mkString.split(",").toBuffer
         info(1) = info(1).substring(0,info(1).length()-2)
         val stdIN = System.console()
         
