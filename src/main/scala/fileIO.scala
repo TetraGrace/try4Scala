@@ -11,9 +11,11 @@ object fileIO {
         buf.foreach(x => result += x.toString())
         return result;
     }
+
     def main(args: Array[String]):Unit = {
         val TESTPATH = "I:/try4Scala/src/main/TextDocs/testTex1.txt";
         val passFile = "I:/try4Scala/src/main/TextDocs/userAndPass.txt"
+        val OTHERFILE = "I:/try4Scala/src/main/TextDocs/testTex2.txt"
         var info = Source.fromFile(passFile).mkString.split(",").toBuffer
         info(1) = info(1).substring(0,info(1).length()-2)
         val stdIN = System.console()
@@ -28,6 +30,9 @@ object fileIO {
             return
         }
         println("Displaying text from file")
-        println(Source.fromFile(TESTPATH).mkString)
+        val data = Source.fromFile(TESTPATH).mkString
+        val writer = new PrintWriter(new File(OTHERFILE))
+         
+        writer.close()
   }
 }
